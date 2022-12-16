@@ -41,11 +41,49 @@
         color: #fff;
         border-color: #fff;
     }
+
+    .tm-nav-item-link:active {
+        background-color: #7d9eb7;
+        color: #fff;
+        border-color: #fff;
+    }
+
+    .tm-nav-item-link:focus {
+        background-color: #7d9eb7;
+        color: #fff;
+        border-color: #fff;
+    }
+
+    .picture {
+        width: 16.3vw;
+        height: 300px;
+        overflow: hidden;
+        margin: 0 auto;
+        z-index: -1;
+    }
+
+    .picture img {
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .picture:hover img {
+        transform: scale(1.5);
+    }
+
+    .contact-link {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .contact-link b {
+        margin-left: 1%;
+    }
 </style>
 <body>
 <div class="container">
     <div class="tm-sidebar">
-        <img src="img/menu-top.jpg" alt="Menu top image" class="img-fluid tm-sidebar-image">
+        <!-- <img src="img/menu-top.jpg" alt="Menu top image" class="img-fluid tm-sidebar-image"> -->
         <nav class="tm-main-nav">
             <ul>
                 <li class="tm-nav-item"><a href="#home" class="tm-nav-item-link">Home</a></li>
@@ -69,9 +107,10 @@
             <div class="tm-content-box flex-2-col">
                 
                 <div class="pad flex-item tm-team-description-container">
-                    <h2 class="tm-section-title">Our Team</h2>
-                    <p class="tm-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi pharetra nibh varius pharetra ac sagittis nisi. Etiam pharetra vestibulum hendrerit.</p>
-                    <p class="tm-section-description">Donec ex libero, fringilla vitae purus sit amet, rhoncus pharetra lorem. Pellentesque id sem id lacus ultricies vehicula. Aliquam rutrum mi non.</p>    
+                    <h2 class="tm-section-title">About Me</h2>
+                    <p class="tm-section-description">
+                        With a strong background in both copywriting and journalism. I am confident in creating and designing daily social media content, as well as finding, developing, and writing articles, lists of questions, and also conducting interviews. I also possesses excellent research and communication skills, with the ability to create engaging and informative content that resonates with target audiences. With my proficiency in using various content management systems and social media platforms to publish and promote work.
+                    </p>
                 </div>
                 <div class="flex-item">
                     <img src="img/about.jpg" alt="">    
@@ -79,7 +118,7 @@
                 
 
             </div>
-            <div id="about" class="tm-content-box">
+            <div id="about" class="tm-content-box" style="border-radius: 10px;">
                 
                 <ul class="boxes gallery-container">
                     <li class="box box-bg">
@@ -87,28 +126,36 @@
                         <img src="img/white-bg.jpg" alt="Image" class="img-fluid">
                     </li>
                     <li class="box">
-                        <a href="img/idea-large-01.jpg"><img src="img/idea-01.jpg" alt="Image" class="img-fluid"></a>
+                        <div class="picture">
+                            <a href="img/hari_anak.png"><img src="img/hari_anak.png" alt="Image" class="img-fluid"></a>
+                        </div>
                     </li>
                     <li class="box box-bg">
                         <h2 class="tm-section-title tm-section-title-box tm-box-bg-title">Develop</h2>
                         <img src="img/white-bg.jpg" alt="Image" class="img-fluid">
                     </li>
                     <li class="box">
-                        <a href="img/idea-large-02.jpg"><img src="img/idea-02.jpg" alt="Image" class="img-fluid"></a>
+                        <div class="picture">
+                            <a href="img/lailatul.png"><img src="img/lailatul.png" alt="Image" class="img-fluid"></a>
+                        </div>
                     </li>
                     <li class="box box-bg">
                         <h2 class="tm-section-title tm-section-title-box tm-box-bg-title">Design</h2>
                         <img src="img/white-bg.jpg" alt="Image" class="img-fluid">
                     </li>
                     <li class="box">
-                        <a href="img/idea-large-03.jpg"><img src="img/idea-03.jpg" alt="Image" class="img-fluid"></a>
+                        <div class="picture">
+                            <a href="img/buku2.png"><img src="img/buku2.png" alt="Image" class="img-fluid"></a>
+                        </div>
                     </li>
                     <li class="box box-bg">
                         <h2 class="tm-section-title tm-section-title-box tm-box-bg-title">Support</h2>
                         <img src="img/white-bg.jpg" alt="Image" class="img-fluid">
                     </li>
                     <li class="box">
-                        <a href="img/idea-large-04.jpg"><img src="img/idea-04.jpg" alt="Image" class="img-fluid"></a>
+                        <div class="picture">
+                            <a href="img/adat.png"><img src="img/adat.png" alt="Image" class="img-fluid"></a>
+                        </div>
                     </li>
                     <li class="box box-bg">
                         <h2 class="tm-section-title tm-section-title-box tm-box-bg-title">Think</h2>
@@ -123,6 +170,7 @@
         <!-- slider -->
         <section id="ideas">
             <div id="tmCarousel" class="carousel slide tm-content-box" data-ride="carousel">
+                <h2 class="tm-section-title mb-2"><b>Experience</b></h2>
 
                 <ol class="carousel-indicators">
                     <li data-target="#tmCarousel" data-slide-to="0" class="active"></li>
@@ -135,26 +183,35 @@
                     <div class="carousel-item active">
                         <div class="carousel-content">
                             <div class="flex-item">
-                                <h2 class="tm-section-title">Our Ideas</h2>
-                                <p class="tm-section-description carousel-description">Suspendisse fermentum auctor turpis quis volutpat. Ut sed nibh non purus porta lacinia. Donec et euismod elit. Aenean vitae quam leo. Pellentesque interdum metus sed massa rutrum.</p>
+                                <h2 class="tm-section-title">Journalist, <a href="https://www.instagram.com/muslimahdailycom/">@muslimahdailycom</a></h2>
+                                <p class="tm-section-description carousel-description"><i>May 2021 - Jun 2021</i></p>
+                                <p class="tm-section-description carousel-description">
+                                    As a journalist for muslimahdaily.com, my main goals are to find and develop content, create lists of questions and conduct interviews for the purpose of creating engaging and informative content, and arrange and organize the content on the main site. I am skilled in researching and finding relevant and interesting topics, as well as writing clear and concise articles that appeal to our target audience. I possess excellent communication and research skills, and am adept at conducting interviews and gathering information from various sources.
+                                </p>
                             </div>
                         </div>                               
                     </div>
-
+                    
                     <div class="carousel-item">
                         <div class="carousel-content">
                             <div class="flex-item">
-                                <h2 class="tm-section-title">Our Clients</h2>
-                                <p class="tm-section-description carousel-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi pharetra nibh varius pharetra ac sagittis nisi. Etiam pharetra vestibulum hendrerit. Pellentesque interdum metus sed massa rutrum.</p>
+                                <h2 class="tm-section-title">Social Media Admin, <a href="https://www.instagram.com/artfunnia/">@artfunnia</a></h2>
+                                <p class="tm-section-description carousel-description"><i>Jul 2021 - Oct 2021</i></p>
+                                <p class="tm-section-description carousel-description">
+                                    As a social media admin for Art Funnia, I am responsible for managing and updating all of the company's social media accounts, including Instagram and Facebook. My duties include arranging and scheduling content, completing daily content tasks, conducting research on our target market, responding to direct messages, evaluating the impact of our content using insights, and creating daily reports. Analyzing data and using insights to inform my content strategy and ensure that our social media efforts are effective and aligned.
+                                </p>
                             </div>
                         </div>                                
                     </div>
-
+                    
                     <div class="carousel-item">
                         <div class="carousel-content">
                             <div class="flex-item">
-                                <h2 class="tm-section-title">Our Projects</h2>
-                                <p class="tm-section-description carousel-description">Donec ex libero, fringilla vitae purus sit amet, rhoncus pharetra lorem. Pellentesque id sem id lacus ultricies vehicula. Aliquam rutrum mi non. Pellentesque interdum metus sed massa rutrum.</p>
+                                <h2 class="tm-section-title">Copywriter, <a href="https://www.instagram.com/jejakdigital.tv/">@jejakdigital.tv</a></h2>
+                                <p class="tm-section-description carousel-description"><i>Aug 2021 - Nov 2021</i></p>
+                                <p class="tm-section-description carousel-description">
+                                    As a copywriter for @jejakdigital.tv, I am responsible for creating, finding, and developing happening and viral topics for the company's daily Instagram content. This includes conducting research, brainstorming ideas, and writing engaging and shareable captions and hashtags. I also work closely with the social media team to ensure that our content aligns with our brand voice and meets the needs of our audience. In this role, I have gained valuable experience in crafting effective and attention-grabbing social media copy, as well as staying up-to-date on the latest trends and happenings in the digital world.
+                                </p>
                             </div>
                         </div>                                
                     </div>
@@ -165,34 +222,24 @@
         </section>
 
         <section class="tm-content-box">
-            <img src="img/contact.jpg" alt="Contact image" class="img-fluid">
+            <!-- <img src="img/contact.jpg" alt="Contact image" class="img-fluid"> -->
 
             <div id="contact" class="pad">
-                <h2 class="tm-section-title">Contact Us</h2>
-                <form action="#contact" method="get" class="contact-form">
-
-                    <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 form-group-2-col-left">
-                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 form-group-2-col-right">
-                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary submit-btn">Submit</button>
-
-                </form>      
+                <h2 style="margin-bottom: 5%;" class="tm-section-title">Contact Me</h2>
+                <div class="contact-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30px" height="30px" alt="Linkedin free icon" title="Linkedin free icon">
+                    <b><a href="https://www.linkedin.com/in/devi-nursafitri/">linkedin.com/in/devi-nursafitri/</a></b>
+                </div>
+                <div class="contact-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png " width="30px" height="30px" alt="" title="" class="img-small">
+                    <b><a href="https://www.instagram.com/devinursafitri/">instagram.com/devinursafitri/</a></b>
+                </div>
             </div>
             
         </section>  
 
         <footer class="tm-footer">
-            <p class="text-xs-center">Copyright &copy; 2016 Company Name</p>
+            <p class="text-xs-center" style="color: #fff;">Copyright &copy; 2022 by Devi Nursafitri. Powered by <b><a style="color: #36494f;" href="https://templatemo.com">Templatemo</a></b>.</p>
         </footer>
 
     </div>
